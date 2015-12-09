@@ -1,0 +1,12 @@
+	.text
+	.globl main
+
+main:
+	ori $v0, $0, 32767
+	ori $t0, $0, 1
+	
+	for-begin:
+	blt $t0, $a1, after-for
+		bge after-if
+			or $v0, 
+		after-if:
